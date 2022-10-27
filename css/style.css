@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: auto;
+    /*background: -moz-linear-gradient(top, #fc00ff, #00dbde);
+    background: -webkit-linear-gradient(top, #fc00ff, #00dbde);
+    background: linear-gradient(to top, #fc00ff, #00dbde);*/
+    overflow: hidden;
+}
+
+body {
+    /*background: url("../img/1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+
+     background: -moz-linear-gradient(top, #555555, #999999);
+    background: -webkit-linear-gradient(top, #555555, #999999);
+    background: linear-gradient(to top, #555555, #999999);
+}
+
+._slaid {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+}
+._slaid._active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.ponel {
+    width: 450px;
+    height: 100px;
+    background: #333;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.ponel-button {
+    flex: 0 0 32%;
+    background: #fff;
+    height: 100%;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.ponel-button__left {}
+.ponel-button__center {}
+.ponel-button__top {}
+
+
+
+.slaid-1 {
+    width: 60vw;
+    height: 60vh;
+    /*background: #000;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 120px 50px;
+}
+.container {}
+.slaid-1__body {}
+.slaid-1__title {
+    font-size: 74px;
+    color: #000;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+
+}
+.slaid-1__sub-title {
+    font-size: 34px;
+    color: #000;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 120px;
+}
+.slaid-1__button {
+    font-size: 34px;
+    color: #000;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    padding: 20px 60px;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    cursor: pointer;
+}
+
+.slaid-2 {
+    width: 60vw;
+    height: 70vh;
+    background: rgba(51, 51, 51, 0.3);
+
+    position: fixed;
+    z-index: 1000;
+    
+    top: 50px;
+    right: 50px;
+    padding: 120px 50px;
+    border-radius: 30px;
+}
+._slaid {}
+._active {}
+.container {}
+.slaid-1__body {}
+.slaid-1__title {}
+.slaid-1__sub-title {}
+.slaid-2__body {
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.slaid-2__blok {
+    flex: 0 0 33.333%;
+    padding: 35px;
+}
+.slaid-2__img {
+    width: 100px;
+    height: 100px;
+    background: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+.slaid-2__text {
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}
